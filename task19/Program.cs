@@ -10,16 +10,18 @@
 
 System.Console.Write("Введите число: ");
 string inputValue = System.Console.ReadLine();
-
-for (int i = 0; i < inputValue.Length; i++) {
-    if(inputValue[i] != inputValue[inputValue.Length - 1 - i]) {
-        System.Console.WriteLine("Число не палиндром!");
-        break;
-    }
+if(inputValue.Length >= 5) {
+    for (int i = 0; i < inputValue.Length; i++) {
+        if(inputValue[i] != inputValue[inputValue.Length - 1 - i]) {
+            System.Console.WriteLine("Число не палиндром!");
+            break;
+        }
     
-    if(i == inputValue.Length - 1) {
-        System.Console.WriteLine("Число палиндром");
-        break;
+        if(i == inputValue.Length - 1) {
+            System.Console.WriteLine("Число палиндром");
+            break;
+        }
     }
+} else {
+    System.Console.WriteLine("Введите не меньше 5 чисел!");
 }
-
