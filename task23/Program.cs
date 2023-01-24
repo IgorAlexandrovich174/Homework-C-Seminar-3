@@ -6,7 +6,7 @@
 //5 -> 1, 8, 27, 64, 125
 
 
-System.Console.WriteLine("Введите число");
+System.Console.WriteLine("Введите число: ");
 int value = Convert.ToInt32(System.Console.ReadLine());
 
 for (int i = 1; i <= value; i++) {
